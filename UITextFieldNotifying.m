@@ -2,6 +2,8 @@
 //  UITextFieldNotifying.m
 //
 //  Created by Dale Myers on 17/08/2012.
+//
+//  http://github.com/Vel0x/NSTextFieldNotifying
 
 /*
     Copyright (c) 2012 Dale Myers
