@@ -29,6 +29,7 @@
 #import <Cocoa/Cocoa.h>
 
 @protocol NSTextFieldNotifyingDelegate <NSTextFieldDelegate>
+@optional
 -(void)textFieldDidChange:(NSTextField *)textField;
 @end
 

@@ -29,6 +29,7 @@
 #import <UIKit/UIKit.h>
 
 @protocol UITextFieldNotifyingDelegate <UITextFieldDelegate>
+@optional
 -(void)textFieldDidChange:(UITextField *)textField;
 @end
 
