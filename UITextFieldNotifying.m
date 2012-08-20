@@ -48,7 +48,7 @@
     return self;
 }
 
--(id)initWithFrame:(NSRect)frameRect{
+-(id)initWithFrame:(CGRect)frameRect{
     self = [super initWithFrame:frameRect];
     if(self){
         [self registerForNotifications];
@@ -57,7 +57,7 @@
 }
 
 -(void)registerForNotifications{
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textFieldDidChange:) name:UITextFieldDidChangeNotification object:self];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textFieldDidChange:) name:UITextFieldTextDidChangeNotification object:self];
 }
 
 -(void)textFieldDidChange:(NSNotification *)notification{

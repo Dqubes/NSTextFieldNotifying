@@ -26,7 +26,7 @@
     distribution.
  */
 
-#import <Cocoa/Cocoa.h>
+#import <UIKit/UIKit.h>
 
 @protocol UITextFieldNotifyingDelegate <UITextFieldDelegate>
 -(void)textFieldDidChange:(UITextField *)textField;
