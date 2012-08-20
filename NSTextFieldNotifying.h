@@ -1,5 +1,5 @@
 //
-//  UITextFieldNotifying.h
+//  NSTextFieldNotifying.h
 //
 //  Created by Dale Myers on 17/08/2012.
 
@@ -28,13 +28,13 @@
 
 #import <Cocoa/Cocoa.h>
 
-@protocol UITextFieldNotifyingDelegate <UITextFieldDelegate>
--(void)textFieldDidChange:(UITextField *)textField;
+@protocol NSTextFieldNotifyingDelegate <NSTextFieldDelegate>
+-(void)textFieldDidChange:(NSTextField *)textField;
 @end
 
 
-@interface UITextFieldNotifying : UITextField
+@interface NSTextFieldNotifying : NSTextField
 
-@property (weak,nonatomic) id<UITextFieldNotifyingDelegate> delegate;
+@property (weak,nonatomic) id<NSTextFieldNotifyingDelegate> delegate;
 
 @end

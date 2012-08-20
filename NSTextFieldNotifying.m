@@ -1,5 +1,5 @@
 //
-//  UITextFieldNotifying.m
+//  NSTextFieldNotifying.m
 //
 //  Created by Dale Myers on 17/08/2012.
 
@@ -26,9 +26,9 @@
     distribution.
 */
 
-#import "UITextFieldNotifying.h"
+#import "NSTextFieldNotifying.h"
 
-@implementation UITextFieldNotifying
+@implementation NSTextFieldNotifying
 
 @synthesize delegate;
 
@@ -57,7 +57,7 @@
 }
 
 -(void)registerForNotifications{
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textFieldDidChange:) name:UITextFieldDidChangeNotification object:self];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textFieldDidChange:) name:NSControlTextDidChangeNotification object:self];
 }
 
 -(void)textFieldDidChange:(NSNotification *)notification{
